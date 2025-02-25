@@ -25,8 +25,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Wait for 5 minutes
-        run: sleep 300  # Đợi 5 phút để chắc chắn không có commit mới
+      - name: Wait for 1 minutes
+        run: sleep 60  # Đợi 1 phút để chắc chắn không có commit mới
 
       - name: Fetch latest commit
         run: git fetch origin main
